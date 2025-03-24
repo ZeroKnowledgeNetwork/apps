@@ -2,7 +2,7 @@
 
 USAGE="USAGE: ${0} <network_id> [platform]\n\n[platform] is one of:\n  linux-x64 (default)\n  linux-arm64\n  windows-x64\n  macos"
 test -z "${1}" && echo -e "${USAGE}" && exit 1
-url="https://test.net.0kn.io/${1}"
+url="https://test.net.zknet.io/${1}"
 dir=$(dirname "$(realpath "${BASH_SOURCE[0]}")")
 os="${2:-"linux-x64"}"
 app="${dir}/${1}-walletshield-${os}"
